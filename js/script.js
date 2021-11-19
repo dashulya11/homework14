@@ -1,7 +1,7 @@
 function padString(str, num, symb = ')', boo = true) {
     if (typeof str === 'undefined') return 'some error';
     if (typeof num === 'undefined') return 'some error';
-    if (str.length >= num) return str.substring(0, num);
+    if (str.length >= num) return str.substr(0, num);
     for (let i = str.length; i < num; i++) {
         if (boo) {
             str = str + symb;
